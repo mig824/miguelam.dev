@@ -1,8 +1,9 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import { Global as GlobalCSS } from '@emotion/react'
 
-import Header from "./header"
-import "./layout.css"
+import Header from './header'
+import { globalCSS } from '../utils/style'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalCSS styles={globalCSS} />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{

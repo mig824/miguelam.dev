@@ -1,11 +1,14 @@
-import { Link } from "gatsby"
-import React from "react"
+import React from 'react'
+import { Link } from 'gatsby'
 
-const Header = ({ siteTitle = "" }) => (
+import { darkTheme } from '../utils/style'
+
+const Header = ({ siteTitle = '' }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: darkTheme.primaryColor,
       marginBottom: `1.45rem`,
+      borderBottom: `${darkTheme.tertiaryColor} 2px solid`,
     }}
   >
     <div
@@ -19,7 +22,7 @@ const Header = ({ siteTitle = "" }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: darkTheme.lightTextColor,
             textDecoration: `none`,
           }}
         >
