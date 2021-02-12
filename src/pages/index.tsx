@@ -1,18 +1,16 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-import Image from '../components/image'
 import SEO from '../components/seo'
+import { Hero } from '../components/home'
 
-const IndexPage = () => (
+const HomePage: FC = () => (
   <>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <Hero />
+    <div>
+      <h2>Testing</h2>
     </div>
   </>
 )
 
-export default IndexPage
+export default HomePage

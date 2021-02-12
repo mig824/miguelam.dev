@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { headerFont, primaryFont } from './typography'
+import { headerFont, primaryFont, typeScale } from './typography'
 import { darkTheme } from './themes'
 
 export const globalCSS = css`
@@ -33,5 +33,9 @@ export const globalCSS = css`
   h4,
   h5 {
     font-family: ${headerFont};
+  }
+
+  h1 {
+    font-size: ${typeScale.h1};
   }
 `

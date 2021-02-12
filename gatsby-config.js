@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `My website`,
-    description: `Hi I'm full-stack developer, Miguel Michel. Welcome to my humble abode.`,
+    title: `Miguel Michel Related Stuff`,
+    description: `Hi, I'm a full-stack developer named Miguel Michel. Welcome to my humble abode.`,
     author: `Miguel Michel`,
   },
   plugins: [
@@ -9,7 +9,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/utils/images`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `my-website`,
+        short_name: `mig-site`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/utils/images/gatsby-icon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

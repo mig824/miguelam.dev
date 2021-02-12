@@ -1,8 +1,8 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO({ description = "", lang = "en", meta = [], title }) {
+const SEO = ({ description = '', lang = 'en', meta = [], title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -25,8 +25,8 @@ function SEO({ description = "", lang = "en", meta = [], title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      title={defaultTitle}
+      // titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
           name: `description`,
