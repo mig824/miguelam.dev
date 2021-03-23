@@ -1,31 +1,16 @@
-import React, { FC } from 'react'
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
 
 import { darkTheme, typeScale } from '../../utils/style'
 
-export const Hero: FC = () => {
-  return (
-    <HeroContainer>
-      <NameContainer>
-        <h1>Miguel</h1>
-        <h1 id="thin">Michel</h1>
-      </NameContainer>
-      <Stripes />
-      <Stripes2 />
-      <Stripes3 />
-    </HeroContainer>
-  )
-}
-
-const HeroContainer = styled.section`
+export const HeroContainer = styled.section`
   width: 100%;
   height: 100vh;
   position: relative;
   border-bottom: 2px solid ${darkTheme.tertiaryColor};
   overflow: hidden;
 `
-const NameContainer = styled.div`
+export const NameContainer = styled.div`
   position: absolute;
   left: 50%;
   top: 50%;
@@ -53,7 +38,7 @@ const slide = keyframes`
   }
 `
 
-const Stripes = styled.div`
+export const Stripes = styled.div`
   animation: ${slide} 4s ease-in-out infinite alternate;
   background-image: linear-gradient(
     -60deg,
@@ -69,11 +54,11 @@ const Stripes = styled.div`
   z-index: -1;
 `
 
-const Stripes2 = styled(Stripes)`
+export const Stripes2 = styled(Stripes)`
   animation-direction: alternate-reverse;
   animation-duration: 5s;
 `
 
-const Stripes3 = styled(Stripes)`
+export const Stripes3 = styled(Stripes)`
   animation-duration: 6s;
 `

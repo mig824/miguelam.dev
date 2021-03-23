@@ -1,7 +1,4 @@
 import React, { FC } from 'react'
-import styled from '@emotion/styled'
-
-import { darkTheme } from '../utils/style'
 
 const Header: FC<{ author: string }> = ({ author = '' }) => (
   <header>

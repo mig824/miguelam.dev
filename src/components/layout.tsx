@@ -23,7 +23,7 @@ const Layout: FC = ({ children }) => {
       {/* <Header author={site.siteMetadata?.author || `Author`} /> */}
 
       <main>{children}</main>
-      <footer
+      {/* <footer
         style={{
           marginTop: `2rem`,
         }}
@@ -31,7 +31,7 @@ const Layout: FC = ({ children }) => {
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      </footer> */}
     </>
   )
 }

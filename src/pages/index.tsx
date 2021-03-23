@@ -1,14 +1,15 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 import SEO from '../components/seo'
-import { Hero, Bio } from '../components/home'
+import { Hero } from '../components/hero'
+import { Bio } from '../components/bio'
 
-const HomePage: FC = () => (
-  <>
-    <SEO title="Home" />
-    <Hero />
-    <Bio />
-  </>
-)
-
-export default HomePage
+export default function HomePage() {
+  return (
+    <>
+      <SEO title="Home" />
+      <Hero />
+      <Bio />
+    </>
+  )
+}

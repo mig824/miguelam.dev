@@ -55,7 +55,8 @@ export const globalCSS = css`
     font-size: ${typeScale.h5};
   }
 
-  p {
+  p,
+  li {
     font-size: ${typeScale.paragraph};
     line-height: 1.5rem;
   }
