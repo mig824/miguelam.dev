@@ -1,15 +1,15 @@
 import styled from '@emotion/styled'
 
-import { tabletPortrait768, darkTheme } from '../../utils/style'
+import { tabletPortrait768, defaultTheme } from '../../utils/style'
 
 export const Section = styled.section`
   padding: 1em;
   width: 100%;
   margin: auto;
-  border-bottom: solid 2px ${darkTheme.accentColor};
+  border-bottom: solid 2px ${defaultTheme.accentColor};
 
   .mint {
-    color: ${darkTheme.accentColor};
+    color: ${defaultTheme.accentColor};
   }
 
   ${tabletPortrait768} {
@@ -46,7 +46,7 @@ export const TextContainer = styled.div`
   grid-area: bio;
 
   h3 {
-    color: ${darkTheme.secondaryColor};
+    color: ${defaultTheme.secondaryColor};
   }
 
   ${tabletPortrait768} {
@@ -69,7 +69,7 @@ export const List = styled.ul`
   list-style-type: '\u2192';
 
   li::marker {
-    color: ${darkTheme.tertiaryColor};
+    color: ${defaultTheme.tertiaryColor};
   }
 
   li {

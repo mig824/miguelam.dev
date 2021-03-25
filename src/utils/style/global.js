@@ -1,6 +1,6 @@
 import { css } from '@emotion/react'
 import { headerFont, primaryFont, typeScale } from './typography'
-import { darkTheme } from './themes'
+import { defaultTheme } from './themes'
 
 export const globalCSS = css`
   html {
@@ -18,13 +18,13 @@ export const globalCSS = css`
 
   body {
     margin: 0;
-    background-color: ${darkTheme.backgroundColor};
+    background-color: ${defaultTheme.backgroundColor};
     font-family: ${primaryFont};
   }
 
   main {
     margin: 0 auto;
-    color: ${darkTheme.lightTextColor};
+    color: ${defaultTheme.lightTextColor};
   }
 
   h1,

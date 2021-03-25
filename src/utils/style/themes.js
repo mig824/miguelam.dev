@@ -1,7 +1,7 @@
 import { green, lavender, gold, neutral, darkBlue, mint } from './colors'
 import { headerFont, primaryFont } from './typography'
 
-export const darkTheme = {
+export const defaultTheme = {
   primaryColor: green[200],
   primaryColorHover: green[100],
   primaryColorActive: green[300],

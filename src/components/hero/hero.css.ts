@@ -1,13 +1,13 @@
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
 
-import { darkTheme, typeScale } from '../../utils/style'
+import { defaultTheme, typeScale } from '../../utils/style'
 
 export const HeroContainer = styled.section`
   width: 100%;
   height: 100vh;
   position: relative;
-  border-bottom: 2px solid ${darkTheme.tertiaryColor};
+  border-bottom: 2px solid ${defaultTheme.tertiaryColor};
   overflow: hidden;
 `
 export const NameContainer = styled.div`
@@ -20,12 +20,12 @@ export const NameContainer = styled.div`
 
   h1 {
     font-size: ${typeScale.hero};
-    color: ${darkTheme.tertiaryColor};
+    color: ${defaultTheme.tertiaryColor};
     letter-spacing: 1rem;
   }
 
   #thin {
-    font-family: ${darkTheme.primaryFont};
+    font-family: ${defaultTheme.primaryFont};
   }
 `
 
@@ -42,8 +42,8 @@ export const Stripes = styled.div`
   animation: ${slide} 4s ease-in-out infinite alternate;
   background-image: linear-gradient(
     -60deg,
-    ${darkTheme.primaryColor} 50%,
-    ${darkTheme.secondaryColor} 50%
+    ${defaultTheme.primaryColor} 50%,
+    ${defaultTheme.secondaryColor} 50%
   );
   bottom: 0;
   left: -50%;
