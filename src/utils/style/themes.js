@@ -13,6 +13,7 @@ export const defaultTheme = {
   tertiaryColorActive: gold[300],
   lightTextColor: neutral[200],
   darkTextColor: neutral[600],
+  captionTextColor: neutral[300],
   backgroundColor: darkBlue[200],
   accentColor: mint[200],
   headerFont,

@@ -1,13 +1,20 @@
 import { css } from '@emotion/react'
-import { headerFont, primaryFont, typeScale } from './typography'
+import { headerFont, primaryFont, typeScale, fluid } from './typography'
 import { defaultTheme } from './themes'
+import { desktop1200 } from './breakpoints'
 
+export const MIN_SITE_WIDTH = 360
+export const MAX_SITE_WIDTH = 1100
 export const globalCSS = css`
   html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: ${fluid(14, 17)};
+
+    ${desktop1200} {
+      font-size: 17.25px;
+    }
   }
 
   *,
@@ -55,9 +62,17 @@ export const globalCSS = css`
     font-size: ${typeScale.h5};
   }
 
-  p,
+  p {
+    font-size: ${typeScale.baseFontSize};
+    line-height: ${fluid(20, 24)};
+  }
+
   li {
-    font-size: ${typeScale.paragraph};
-    line-height: 1.5rem;
+    font-size: ${typeScale.baseFontSize};
+  }
+
+  small {
+    font-size: ${typeScale.smallFontSize};
+    color: ${defaultTheme.captionTextColor};
   }
 `
