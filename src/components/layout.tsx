@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Global as GlobalCSS } from '@emotion/react'
 
 import Header from './header'
+import { Footer } from './footer'
 import { globalCSS } from '../utils/style'
 
 const Layout: FC = ({ children }) => {
@@ -23,15 +24,7 @@ const Layout: FC = ({ children }) => {
       {/* <Header author={site.siteMetadata?.author || `Author`} /> */}
 
       <main>{children}</main>
-      {/* <footer
-        style={{
-          marginTop: `2rem`,
-        }}
-      >
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer> */}
+      <Footer />
     </>
   )
 }
