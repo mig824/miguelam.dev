@@ -44,6 +44,11 @@ export default function Html({ htmlAttributes, ...props }) {
 Looks like someone got a little curious hehe
 It's alright I do it all the time :)
 
+If you'd like to see what tools I used
+there's a link to the source code is in the footer
+
+Go take a look!
+
 ----------------------------------------------->
 				${renderedChildren}
 			`,
