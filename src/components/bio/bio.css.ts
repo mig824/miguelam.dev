@@ -44,7 +44,6 @@ export const TextContainer = styled.div`
   max-width: 550px;
   height: 100%;
   padding: 0.5rem;
-  /* margin: 0 1rem 1rem 0; */
   grid-area: bio;
 
   h3 {
