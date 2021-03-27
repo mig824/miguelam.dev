@@ -4,7 +4,7 @@ import { Global as GlobalCSS } from '@emotion/react'
 
 // import Header from './header'
 import { Footer } from './footer'
-import { globalCSS } from '../utils/style'
+import { globalCSS } from '@utils/design'
 
 const Layout: FC = ({ children }) => {
   const { site } = useStaticQuery(graphql`

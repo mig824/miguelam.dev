@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-import { defaultTheme, mobileLandscape480 } from '../../utils/style'
+import { defaultTheme, mobileLandscape480 } from '@utils/design'
 
 export const FooterCSS = styled.footer`
   display: flex;

@@ -21,6 +21,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-emotion',
+    'gatsby-plugin-tsconfig-paths',
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {

@@ -1,13 +1,10 @@
 import styled from '@emotion/styled'
 
-import {
-  tabletPortrait768,
-  defaultTheme,
-  MAX_SITE_WIDTH,
-} from '../../utils/style'
+import { tabletPortrait768, defaultTheme, MAX_SITE_WIDTH } from '@utils/design'
 
 export const Section = styled.section`
   padding: 0.5rem;
+  padding-bottom: 2rem;
   width: 100%;
   margin: auto;
   border-bottom: solid 2px ${defaultTheme.accentColor};
@@ -47,7 +44,7 @@ export const TextContainer = styled.div`
   max-width: 550px;
   height: 100%;
   padding: 0.5rem;
-  margin: 1rem 1rem 1rem 0;
+  /* margin: 0 1rem 1rem 0; */
   grid-area: bio;
 
   h3 {
@@ -57,6 +54,7 @@ export const TextContainer = styled.div`
   ${tabletPortrait768} {
     width: 95%;
     padding: 1rem 0 1rem 1rem;
+    margin-top: 1rem;
   }
 `
 
@@ -66,6 +64,11 @@ export const ListContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0.5rem;
+
+  ${tabletPortrait768} {
+    margin-bottom: -1rem;
+  }
 `
 
 export const List = styled.ul`

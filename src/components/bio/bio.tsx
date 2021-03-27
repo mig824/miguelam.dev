@@ -17,18 +17,17 @@ export const Bio: FC = () => {
         <TextContainer>
           <h3>Hola!</h3>
           <p>
-            Miguel is a California-based software engineer with experience
-            working on both ends of the stack, primarily in JavaScript land
-            (other languages don't worry him though since he speaks computer).
-            He enjoys tackling challenging problems, creating things that are
-            useful to others, and learning new ways to improve his skillset. He
-            believes that sharing our knowledge is the key to success and that
-            hard work beats talent every day of the week.
+            I'm a Los Angeles-based software engineer with experience working on
+            both ends of the stack, primarily in JavaScript land. I enjoy
+            tackling challenging problems, creating things that are useful to
+            others, and learning new ways to improve my skillset. I believe that
+            sharing our knowledge is the key to success and that hard work beats
+            talent every day of the week.
           </p>
           <p>
             {' '}
-            When he's not doing computer-related things he's out rock climbing,
-            camping, snowboarding, running, or eating. He also wants to pet your
+            When I'm not doing computer-related things I'm out rock climbing,
+            camping, snowboarding, running, or eating. I also want to pet your
             dog, cat, or <i>&lt;insert pet here&gt;</i>.
           </p>
         </TextContainer>
@@ -56,8 +55,8 @@ export const Bio: FC = () => {
           />
           <br />
           <small>
-            Unfortunately no, they're not all his. Just the dude closest to the
-            camera. That's his co-pilot, Rico
+            Unfortunately no, they're not all mine. Just the pup closest to the
+            camera. That's my co-pilot, Rico
           </small>
         </ImgContainer>
       </ContentContainer>

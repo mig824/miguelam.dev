@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
 
-import { defaultTheme, typeScale } from '../../utils/style'
+import { defaultTheme, typeScale } from '@utils/design'
 
 export const HeroContainer = styled.section`
   width: 100%;
