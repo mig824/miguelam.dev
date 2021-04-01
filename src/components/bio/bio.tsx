@@ -33,8 +33,8 @@ export const Bio: FC = () => {
         </TextContainer>
         <ListContainer>
           <p className="mint">
-            He specializes in the following languages/tools to provide
-            performant, intuitive user experiences:
+            I specialize in the following languages/tools to provide performant,
+            intuitive user experiences:
           </p>
           <List>
             <li>JavaScript (ES6+)</li>
