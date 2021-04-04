@@ -49,7 +49,7 @@ export const Bio: FC = () => {
           <StaticImage
             src="../../images/pic-with-doggos.jpeg"
             alt="A picture of Miguel with dogs in front of the Golden Gate Bridge"
-            layout="fullWidth"
+            layout="constrained"
             placeholder="tracedSVG"
             quality={100}
           />

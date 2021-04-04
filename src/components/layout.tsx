@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Global as GlobalCSS } from '@emotion/react'
+import '@fontsource/yeseva-one'
+import '@fontsource/josefin-sans/300.css'
 
 // import Header from './header'
 import { Footer } from './footer'

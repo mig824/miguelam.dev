@@ -39,8 +39,8 @@ export const IconsContainer = styled.div`
   }
 
   svg {
-    max-height: 2rem;
-    width: 2rem;
+    max-height: 2.5rem;
+    width: 2.5rem;
     white-space: default;
     transition: transform 0.2s ease-in-out;
 

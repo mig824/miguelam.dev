@@ -1149,6 +1149,16 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/josefin-sans@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/josefin-sans/-/josefin-sans-4.2.2.tgz#066eb63d1fd8f29241fcf1610a3ec37206b8fde5"
+  integrity sha512-wtm4Wn0Hcsizgxz/I3yYQxQxGvzZOWQ/U9kJRSR+FFNRS+BCxBSX6gjOuNNf1N8nOxKdgnfW/V4XdS7ABGtRGQ==
+
+"@fontsource/yeseva-one@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/yeseva-one/-/yeseva-one-4.2.2.tgz#4dbc1a4419e0e2dbc5538b1d2e5ab43a67d2fce0"
+  integrity sha512-RvvE8++21gzIkYyCCszLYQQbr+PwTO1B45Ms/ZSNZFkOmcl5B/2FFkv0izPHPzvUjIa9MW+heGJU6yVEA1E8UQ==
+
 "@formspree/core@^2.6.1":
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/@formspree/core/-/core-2.6.2.tgz#a3b00214cdeb93feb9200dad3e2961b9cbc56ffe"
