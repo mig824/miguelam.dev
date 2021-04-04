@@ -31,21 +31,17 @@ export const Contact: FC<{ metadata: MetadataProps }> = ({ metadata }) => {
     }
   }, [active, formRef])
 
-  if (succeeded) {
-    return (
-      <Section>
-        <p>I'll be in touch! 📮 ✉💨</p>
-      </Section>
-    )
-  }
-
   return (
     <Section>
       <FormHeader>
         <h2>Wanna chat about somethin' ?</h2>
-        <p>Use one of these fancy buttons to connect:</p>
+        <p>Use one of these fancy buttons to connect</p>
         <IconsContainer>
-          <button onClick={() => toggleActive(!active)} title="Email">
+          <button
+            onClick={() => toggleActive(!active)}
+            title="Email"
+            disabled={succeeded}
+          >
             <EmailIcon className="email" alt="Email Icon" />
           </button>
           <a
@@ -68,25 +64,29 @@ export const Contact: FC<{ metadata: MetadataProps }> = ({ metadata }) => {
           </a>
         </IconsContainer>
       </FormHeader>
-      <Form ref={formRef} onSubmit={(e) => handleSubmit(e)}>
-        <>
-          <label htmlFor="Name">Name</label>
-          <input type="text" name="Name" id="Name" required />
-          <ValidationError field="Name" prefix="Name" errors={errors} />
-        </>
-        <>
-          <label htmlFor="Email">Email</label>
-          <input type="email" name="Email" id="Email" required />
-          <ValidationError field="Email" prefix="Email" errors={errors} />
-        </>
-        <>
-          <label htmlFor="What's Up?">What's Up?</label>
-          <textarea name="Message" id="What's Up?" rows={10} required />
-        </>
-        <button type="submit" disabled={submitting}>
-          SEND
-        </button>
-      </Form>
+      {succeeded ? (
+        <p>I'll be in touch! 📮 ✉💨</p>
+      ) : (
+        <Form ref={formRef} onSubmit={(e) => handleSubmit(e)}>
+          <>
+            <label htmlFor="Name">Name</label>
+            <input type="text" name="Name" id="Name" required />
+            <ValidationError field="Name" prefix="Name" errors={errors} />
+          </>
+          <>
+            <label htmlFor="Email">Email</label>
+            <input type="email" name="Email" id="Email" required />
+            <ValidationError field="Email" prefix="Email" errors={errors} />
+          </>
+          <>
+            <label htmlFor="What's Up?">What's Up?</label>
+            <textarea name="Message" id="What's Up?" rows={10} required />
+          </>
+          <button type="submit" disabled={submitting}>
+            SEND
+          </button>
+        </Form>
+      )}
     </Section>
   )
 }

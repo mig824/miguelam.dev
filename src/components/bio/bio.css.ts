@@ -18,6 +18,7 @@ export const Section = styled.section`
     flex-direction: row;
     justify-content: space-between;
     padding: 3em;
+    height: 80vh;
   }
 `
 
@@ -37,6 +38,7 @@ export const ContentContainer = styled.div`
     grid-template-areas:
       'bio image'
       'skills skills';
+    padding-bottom: 0;
   }
 `
 
@@ -46,7 +48,7 @@ export const TextContainer = styled.div`
   padding: 0.5rem;
   grid-area: bio;
 
-  h3 {
+  h2 {
     color: ${defaultTheme.secondaryColor};
   }
 
@@ -66,6 +68,7 @@ export const ListContainer = styled.div`
   margin-bottom: 0.5rem;
 
   ${tabletPortrait768} {
+    margin-top: 1rem;
     margin-bottom: -1rem;
   }
 `

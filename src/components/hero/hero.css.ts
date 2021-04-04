@@ -5,7 +5,7 @@ import { defaultTheme, typeScale } from '@utils/design'
 
 export const HeroContainer = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 20vh;
   position: relative;
   border-bottom: 2px solid ${defaultTheme.tertiaryColor};
   overflow: hidden;

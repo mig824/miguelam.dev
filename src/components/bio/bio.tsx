@@ -15,7 +15,7 @@ export const Bio: FC = () => {
     <Section>
       <ContentContainer>
         <TextContainer>
-          <h3>Hola!</h3>
+          <h2>Hola!</h2>
           <p>
             I'm a Los Angeles-based software engineer with experience working on
             both ends of the stack, primarily in JavaScript land. I enjoy
