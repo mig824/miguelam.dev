@@ -1,5 +1,5 @@
-# miguelam.dev
+# mmiguel.dev
 
-### My own space to showcase and share some stuff
+## My own space to showcase and share some stuff
 
-**👷🏽‍♂️ UNDER CONSTRUCTION 🚧**
+### 👷🏽‍♂️ UNDER CONSTRUCTION 🚧

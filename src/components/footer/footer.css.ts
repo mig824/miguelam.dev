@@ -13,62 +13,42 @@ export const FooterCSS = styled.footer`
   a {
     color: ${defaultTheme.tertiaryColor};
     text-decoration: none;
+    font-weight: 600;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: ${defaultTheme.tertiaryColor};
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-out;
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+
+  svg {
+    max-height: 2rem;
+    width: 2rem;
+    transition: transform 0.2s ease-in-out;
+    margin-left: 6px;
 
     &:hover {
+      transform: translateY(-13%);
       cursor: pointer;
-      color: ${defaultTheme.tertiaryColorHover};
-      text-decoration: underline;
-      font-weight: 600;
     }
   }
 
   div:first-of-type {
     margin-bottom: 1rem;
-    order: 2;
-  }
-
-  div:last-of-type {
-    order: 3;
-  }
-
-  .icons {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 1rem 0;
-    order: 1;
-
-    svg {
-      max-height: 2rem;
-      width: 2rem;
-      white-space: default;
-      transition: transform 0.2s ease-in-out;
-
-      &:hover {
-        transform: translateY(-13%);
-        cursor: pointer;
-      }
-    }
-
-    .linkedin {
-      g > #background {
-        fill: ${defaultTheme.tertiaryColor} !important;
-      }
-    }
-
-    .linkedin {
-      g > #shapes > * {
-        fill: ${defaultTheme.primaryColor} !important;
-      }
-    }
-
-    .github {
-      margin-left: 0.8rem;
-
-      g > path {
-        fill: ${defaultTheme.tertiaryColor} !important;
-      }
-    }
   }
 
   ${mobileLandscape480} {
@@ -77,17 +57,10 @@ export const FooterCSS = styled.footer`
 
     div:first-of-type {
       margin-bottom: 0;
-      order: 1;
-    }
-
-    .icons {
-      margin: 0;
-      order: 2;
     }
 
     div:last-of-type {
       margin-top: 0;
-      order: 3;
     }
   }
 `
