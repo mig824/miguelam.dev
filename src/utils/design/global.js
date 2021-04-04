@@ -75,4 +75,12 @@ export const globalCSS = css`
     font-size: ${typeScale.smallFontSize};
     color: ${defaultTheme.captionTextColor};
   }
+
+  input,
+  textarea {
+    font-family: ${defaultTheme.primaryFont};
+    font-size: ${typeScale.baseFontSize};
+    color: ${defaultTheme.darkTextColor};
+    font-weight: 600;
+  }
 `

@@ -1,10 +1,10 @@
 {
-  "name": "@mig824/miguelam.dev",
+  "name": "@mig824/mmiguel.dev",
   "private": true,
   "author": "Miguel Michel <migmic93@gmail.com>",
   "version": "1.0.0",
   "license": "MIT",
-  "repository": "https://github.com/mig824/miguelam.dev",
+  "repository": "https://github.com/mig824/mmiguel.dev",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
@@ -17,6 +17,7 @@
   "dependencies": {
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
+    "@formspree/react": "^2.2.3",
     "gatsby": "^3.2.1",
     "gatsby-plugin-emotion": "^6.1.0",
     "gatsby-plugin-image": "^1.1.1",

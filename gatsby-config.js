@@ -3,8 +3,7 @@ module.exports = {
     author: 'Miguel Michel',
     title: 'Miguel Michel Related Stuff',
     description: `Hi, I'm a full-stack developer named Miguel Michel. Welcome to my humble abode.`,
-    pathname: 'miguelam.dev',
-    url: 'https://miguelam.dev',
+    pathname: 'mmiguel.dev',
     github: 'https://github.com/mig824',
     linkedin: 'https://www.linkedin.com/in/miguel-michel/',
   },
@@ -34,8 +33,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: "Miguel's website [miguelam.dev]",
-        short_name: 'miguelam.dev',
+        name: "Miguel's website [mmiguel.dev]",
+        short_name: 'mmiguel.dev',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
