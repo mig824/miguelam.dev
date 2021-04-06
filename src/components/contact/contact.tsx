@@ -34,7 +34,7 @@ export const Contact: FC<{ metadata: MetadataProps }> = ({ metadata }) => {
   return (
     <Section>
       <FormHeader>
-        <h2>Wanna chat about somethin' ?</h2>
+        <h2>Wanna chat about somethin'?</h2>
         <p>Use one of these fancy buttons to connect</p>
         <IconsContainer>
           <button

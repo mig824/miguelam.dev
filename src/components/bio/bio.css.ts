@@ -18,7 +18,6 @@ export const Section = styled.section`
     flex-direction: row;
     justify-content: space-between;
     padding: 3em;
-    height: 80vh;
   }
 `
 
@@ -38,7 +37,6 @@ export const ContentContainer = styled.div`
     grid-template-areas:
       'bio image'
       'skills skills';
-    padding-bottom: 0;
   }
 `
 
@@ -69,14 +67,14 @@ export const ListContainer = styled.div`
 
   ${tabletPortrait768} {
     margin-top: 1rem;
-    margin-bottom: -1rem;
+    margin-bottom: 0;
   }
 `
 
 export const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, minmax(100px, 200px));
-  list-style-type: '\u2192';
+  list-style-type: '👉🏽';
 
   li::marker {
     color: ${defaultTheme.tertiaryColor};
