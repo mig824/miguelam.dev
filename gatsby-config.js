@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     author: 'Miguel Michel',
-    title: 'Miguel Michel Related Stuff',
+    title: "Miguel Michel's Brief Website",
     description: `Hi, I'm a full-stack developer named Miguel Michel. Welcome to my humble abode.`,
     pathname: 'mmiguel.dev',
     github: 'https://github.com/mig824',
