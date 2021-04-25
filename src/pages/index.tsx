@@ -11,8 +11,7 @@ export default function HomePage({ data }) {
     <>
       <SEO title="Home" />
       <Hero />
-      <Bio />
-      <Contact metadata={data.site.siteMetadata} />
+      <p>Blog goes here</p>
     </>
   )
 }
