@@ -17,6 +17,6 @@ The site is live at [blog.mmiguel.dev](https://blog.mmiguel.dev)
 ---
 
 Built with [Gatsby](https://gatsbyjs.com)\
-Styled with [Emotion](https://emotion.sh)\
+Styled with [Emotion](https://emotion.sh/docs/introduction)\
 Deployed on [Netlify](https://app.netlify.com)\
-The form's backend is handled by [Formspree](https://formspree.io/)
+Contact form handled by [Formspree](https://formspree.io/)
