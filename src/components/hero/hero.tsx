@@ -12,8 +12,7 @@ export const Hero: FC = () => {
   return (
     <HeroContainer>
       <NameContainer>
-        <h1>Miguel</h1>
-        <h1 id="thin">Michel</h1>
+        <h1>Blog</h1>
       </NameContainer>
       <Stripes />
       <Stripes2 />
