@@ -8,7 +8,11 @@ export const FooterCSS = styled.footer`
   justify-content: space-between;
   background-color: ${defaultTheme.primaryColor};
   color: ${defaultTheme.lightTextColor};
+  border-top: solid 2px ${defaultTheme.tertiaryColor};
   padding: 2rem 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
   a {
     color: ${defaultTheme.tertiaryColor};

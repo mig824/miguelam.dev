@@ -22,6 +22,9 @@ export const Footer: FC<{ metadata: MetadataProps }> = ({ metadata }) => {
         </a>
       </div>
       <div>
+        <a href="https://mmiguel.dev">Go to main site </a>
+      </div>
+      <div>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a
