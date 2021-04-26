@@ -13,6 +13,6 @@ which lives in the `main` branch of this repo.
 
 ---
 
-Built with [Gatsby](https://gatsbyjs.com) & [MDX](https://mdxjs.com/)\
+Built with [Gatsby](https://gatsbyjs.com)\
 Styled with [Emotion](https://emotion.sh/docs/introduction)\
 Deployed on [Netlify](https://app.netlify.com)
