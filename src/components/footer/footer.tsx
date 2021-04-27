@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 
 import { FooterCSS } from './footer.css'
+import ExternalLinkIcon from '@utils/icons/external-link.svg'
 
 interface MetadataProps {
   author: string
@@ -13,16 +14,16 @@ export const Footer: FC<{ metadata: MetadataProps }> = ({ metadata }) => {
   return (
     <FooterCSS>
       <div>
+        <a href="https://mmiguel.dev" target="_blank" rel="noopener noreferrer">
+          main site
+        </a>
         <a
-          href={`${metadata.github}/${metadata.pathname}`}
+          href={`${metadata.github}/${metadata.pathname}/tree/blog`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Check out the source code!
+          source code
         </a>
-      </div>
-      <div>
-        <a href="https://mmiguel.dev">Go to main site </a>
       </div>
       <div>
         © {new Date().getFullYear()}, Built with

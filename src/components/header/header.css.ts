@@ -40,5 +40,9 @@ export const HeaderCSS = styled.header`
 
   .blog-text {
     color: ${defaultTheme.tertiaryColor};
+
+    &::after {
+      background-color: ${defaultTheme.tertiaryColor};
+    }
   }
 `

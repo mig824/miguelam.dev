@@ -29,8 +29,17 @@ export const globalCSS = css`
     font-family: ${primaryFont};
   }
 
+  #gatsby-focus-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   main {
+    position: relative;
     margin: 0 auto;
+    flex-grow: 2;
     color: ${defaultTheme.lightTextColor};
   }
 

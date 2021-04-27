@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     author: 'Miguel Michel',
-    title: 'Miguel Michel Related Stuff',
+    title: "Miguel's Blog",
     description: `Hi, I'm a full-stack developer named Miguel Michel. Welcome to my humble abode.`,
     pathname: 'mmiguel.dev',
     github: 'https://github.com/mig824',
@@ -11,14 +11,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
+        name: 'posts',
+        path: `${__dirname}/src/posts`,
       },
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-transformer-remark',
     'gatsby-plugin-emotion',
     'gatsby-plugin-tsconfig-paths',
     {
@@ -33,8 +34,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: "Miguel's website [mmiguel.dev]",
-        short_name: 'mmiguel.dev',
+        name: "Miguel's Blog [blog.mmiguel.dev]",
+        short_name: 'MM.Blog',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',

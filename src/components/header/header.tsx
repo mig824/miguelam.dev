@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React, { FC } from 'react'
 
 import { HeaderCSS } from './header.css'
@@ -8,7 +9,10 @@ export const Header: FC<{ author: string }> = ({ author = '' }) => (
       <a href="https://mmiguel.dev" target="_blank" rel="noopener noreferrer">
         {author}
       </a>{' '}
-      | <span className="blog-text">Blog</span>
+      |{' '}
+      <Link to="/" className="blog-text">
+        Blog
+      </Link>
     </h4>
   </HeaderCSS>
 )
