@@ -8,13 +8,13 @@ export const FooterCSS = styled.footer`
   justify-content: space-between;
   background-color: ${defaultTheme.primaryColor};
   color: ${defaultTheme.lightTextColor};
+  border-top: solid 2px ${defaultTheme.tertiaryColor};
   padding: 2rem 1rem;
 
   a {
-    color: ${defaultTheme.tertiaryColor};
     text-decoration: none;
-    font-weight: 600;
     position: relative;
+    color: ${defaultTheme.lightTextColor};
 
     &:after {
       content: '';
@@ -33,22 +33,28 @@ export const FooterCSS = styled.footer`
       transform: scaleX(1);
       transform-origin: bottom left;
     }
+
+    &:hover {
+      font-weight: 600;
+      color: ${defaultTheme.tertiaryColor};
+    }
   }
 
   svg {
-    max-height: 2rem;
-    width: 2rem;
+    max-height: 1rem;
+    width: 1rem;
     transition: transform 0.2s ease-in-out;
-    margin-left: 6px;
-
-    &:hover {
-      transform: translateY(-13%);
-      cursor: pointer;
-    }
+    fill: ${defaultTheme.tertiaryColor};
   }
 
   div:first-of-type {
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    a:last-of-type {
+      padding-top: 0.65rem;
+    }
   }
 
   ${mobileLandscape480} {
@@ -61,6 +67,7 @@ export const FooterCSS = styled.footer`
 
     div:last-of-type {
       margin-top: 0;
+      align-self: flex-end;
     }
   }
 `

@@ -7,7 +7,6 @@ export const Section = styled.section`
   padding-bottom: 2rem;
   width: 100%;
   margin: auto;
-  border-bottom: solid 2px ${defaultTheme.accentColor};
   display: flex;
   flex-direction: column;
   align-items: center;

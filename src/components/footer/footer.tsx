@@ -14,11 +14,18 @@ export const Footer: FC<{ metadata: MetadataProps }> = ({ metadata }) => {
     <FooterCSS>
       <div>
         <a
-          href={`${metadata.github}/${metadata.pathname}`}
+          href="https://blog.mmiguel.dev"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Check out the source code!
+          blog
+        </a>
+        <a
+          href={`${metadata.github}/${metadata.pathname}/tree/blog`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          source code
         </a>
       </div>
       <div>
