@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
 
 import { FooterCSS } from './footer.css'
-import ExternalLinkIcon from '@utils/icons/external-link.svg'
 
 interface MetadataProps {
   author: string
